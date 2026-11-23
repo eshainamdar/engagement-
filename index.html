@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#092f59" />
+  <title>Shreya & Rohan | Engagement Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="intro">
+      <p class="eyebrow">A little note, sealed with love</p>
+      <h1>You're invited</h1>
+      <p class="hint" id="hint">Tap the envelope to open your invitation</p>
+    </header>
+
+    <section class="invitation-stage" aria-label="Engagement invitation">
+      <div class="envelope-wrap" id="envelopeWrap">
+        <div class="envelope" id="envelope" role="button" tabindex="0"
+             aria-label="Open the invitation envelope" aria-expanded="false">
+          <div class="envelope-back"></div>
+          <div class="liner"></div>
+          <div class="letter">
+            <img src="assets/invitation-card.png" alt="Shreya and Rohan's engagement invitation" />
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="stamp" aria-hidden="true">
+            <div class="stamp-inner">
+              <span class="stamp-top">WITH LOVE</span>
+              <span class="stamp-lemon">✳</span>
+              <span class="stamp-bottom">S &amp; R</span>
+            </div>
+            <span class="postmark postmark-one"></span>
+            <span class="postmark postmark-two"></span>
+          </div>
+          <div class="seal" aria-hidden="true">S <span>&amp;</span> R</div>
+        </div>
+      </div>
+      <button class="open-button" id="openButton" type="button">Open invitation <span>↗</span></button>
+    </section>
+
+    <footer class="footer-note">With joy, Shreya &amp; Rohan</footer>
+  </main>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
